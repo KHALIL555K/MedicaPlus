@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Acceuil | MEDICARE PLUS</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__brand">
+            <img src="assets/image/MEDICAre-LOGO.png" alt="" class="header__logo">
+            <h1 class="header__title">
+                MEDICARE<span class="header__title-sousTitle">PLUS</span>
+            </h1>
+        </div>
+        <ul class="header__nav">
+            <li class="header__nav-item">Acceuil</li>
+            <li class="header__nav-item">Medcins</li>
+            <li class="header__nav-item">Rendez-vous</li>
+            <li class="header__nav-item ">Suivie Sante</li>
+
+        </ul>
+        <a href="#" class="header__register">Register</a>
+    </header>
+
+
+    <form class="search" action="page/medecins.html">
+        <input type="text" id="search" class="search__input" placeholder="enter le nom de doctor .....">
+        <input type="submit" value="recherche" class="search__submit" onclick="rechercheDoctor()">
+    </form>
+    <main class="main">
+
+        <div class="main__content">
+            <h1 class="main__title">La Mellieur <span class="main__title-item">Clinic</span> Au Maroc</h1>
+
+            <h5 class="main__subtitle">Bonjour à tous ! 🌞
+                Prêt(e)s pour une nouvelle séance pleine d’énergie et de bien-être ? 💪
+                Ici, au sein de notre clinique, chaque effort compte pour retrouver force, équilibre et vitalité.
+                Ensemble, avançons pas à pas vers vos objectifs santé et performance !</h5>
+            <div class="main__actions">
+                <a href="#" class="main__cta main__cta--primary">Voir Plus</a>
+                <a href="#" class="main__cta main__cta--secondary">Register</a>
+            </div>
+        </div>
+        <div class="main__visual">
+            <img src="assets/image/doctor.png" alt="image de doctor" class="main__visual-img">
+        </div>
+    </main>
+
+
+
+    <section class="conseils">
+        <h2 class="conseils__header">Conseils de Santé par nos Médecins</h2>
+
+        <div class="conseils__list">
+            <article class="conseil conseil--prevention">
+                <div class="conseil__media">
+                    <img src="assets/image/sugar-blood-level.png" alt="" class="conseil__media-img">
+                </div>
+                <div class="conseil__body">
+                    <h5>Diabetes</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </article>
+
+            <article class="conseil conseil--nutrition">
+                <div class="conseil__media">
+                    <img src="assets/image/sugar-blood-level.png" alt="" class="conseil__media-img">
+                </div>
+                <div class="conseil__body">
+                    <h5>Diabetes</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </article>
+
+            <article class="conseil conseil--nutrition">
+                <div class="conseil__media">
+                    <img src="assets/image/sugar-blood-level.png" alt="" class="conseil__media-img">
+                </div>
+                <div class="conseil__body">
+                    <h5>Diabetes</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </article>
+            <article class="conseil conseil--nutrition">
+                <div class="conseil__media">
+                    <img src="assets/image/sugar-blood-level.png" alt="" class="conseil__media-img">
+                </div>
+                <div class="conseil__body">
+                    <h5>Diabetes</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="services__visual">
+            <img src="assets/image/nurse-removebg-preview.png" alt="" class="services__image">
+        </div>
+        <div class="services__content">
+            <h6 class="services__subtitle">Notre Service</h6>
+            <h3 class="services__title">Nous Soucions De Votre Santé</h3>
+            <p class="services__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, commodi?
+            </p>
+            <ul class="services__list">
+                <li class="services__item"><img src="assets/image/doctor-consultation.png" alt=""
+                        class="services__item-img">Consultations médicales générales</li>
+                <li class="services__item"><img src="assets/image/clipboard.png" alt="" class="services__item-img">Bilan
+                    de santé complet</li>
+                <li class="services__item"><img src="assets/image/vaccine.png" alt=""
+                        class="services__item-img">Vaccinations et rappels</li>
+                <li class="services__item"><img src="assets/image/sugar-blood-level.png" alt=""
+                        class="services__item-img">Suivi des maladies chroniques (diabète, hypertension,
+                    etc.)</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="medecins">
+        <div class="medecins__titles">
+            <h1 class="medecins__title">DES MEDCINES DE NOTRE CLINIC</h1>
+            <p class="medecins__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iusto labore
+                fugiat minima, iste, neque id suscipit aut sequi repellendus sed amet.
+
+                Aliquam iusto accusantium possimus quisquam laborum iure totam!
+            </p>
+        </div>
+
+
+        <div class="medecins__cards" id="medecins__card"></div>
+
+        <div>
+            <a href="#" class="medecins__link-all">Voir les profiles de tout les medcine </a>
+        </div>
+
+    </section>
+
+
+    <section class="avis">
+        <div class="avis__titles">
+            <h1 class="avis__title">Avis des Clients</h1>
+            <button class="prev avis__cta avis__cta--prev" onclick="prevSlide()">&#10094</button>
+            <button class="next avis__cta avis__cta--next" oncanplay="nextSlide()">&#10095</button>
+        </div>
+        <div class="avis__cards" id="avis__cards"></div>
+
+    </section>
+
+
+
+    <script src="assets/JS/script.js"></script>
+</body>
+
+</html>
