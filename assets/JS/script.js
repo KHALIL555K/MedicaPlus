@@ -3,7 +3,6 @@ let slideIndex = 0;
 let intervalId = null;
 const cardsPerSlide = 3;
 const medicinsCards = document.getElementById("medecins__card");
-let search = document.getElementById('search');
 // section medecins
 
 const medecinsCard = [
@@ -160,6 +159,6 @@ avisCards.addEventListener('mouseleave', () => {
 
 
 const rechercheDoctor = () => {
+    let search = document.getElementById('search');
     localStorage.setItem('searchDoctor', search.value);
 }
-;

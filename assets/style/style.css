@@ -66,6 +66,10 @@
     border-radius: 70px;
 }
 
+a {
+    color: black;
+}
+
 /* ================== main Section ======================= */
 
 .search {
@@ -75,24 +79,24 @@
     justify-content: center;
 }
 
-.search__input{
+.search__input {
     outline: none;
-    padding: 14px 280px 14px 10px ;
+    padding: 14px 280px 14px 10px;
     border: none;
     border-radius: 40px;
     margin-left: 5px;
 }
 
-.search__submit{
+.search__submit {
     border: none;
     outline: none;
     background-color: var(--dark-blue);
     padding: 10px 20px;
-    border-radius: 20px ;
+    border-radius: 20px;
     color: white;
     position: relative;
     left: -107px;
-    
+
 
 }
 
@@ -457,16 +461,16 @@
     top: 70%;
     transform: translateY(-50%);
     font-size: 2rem;
-    background-color: hsl(0, 0%, 0% , 0.5);
+    background-color: hsl(0, 0%, 0%, 0.5);
     color: white;
     border: none;
     cursor: pointer;
 }
 
-.avis__cta--prev{
+.avis__cta--prev {
     left: 0;
 }
 
-.avis__cta--next{
+.avis__cta--next {
     right: 0;
 }

@@ -18,19 +18,19 @@
             </h1>
         </div>
         <ul class="header__nav">
-            <li class="header__nav-item">Acceuil</li>
-            <li class="header__nav-item">Medcins</li>
-            <li class="header__nav-item">Rendez-vous</li>
-            <li class="header__nav-item ">Suivie Sante</li>
+            <li class="header__nav-item"><a href="index.html">Acceuil</a></li>
+            <li class="header__nav-item"><a href="page/medecins.html">Medcins</a></li>
+            <li class="header__nav-item"><a href="page/contact.html">Rendez-vous</a></li>
+            <li class="header__nav-item "><a href="page/suivieSante.html">Suivie Sante</a></li>
 
         </ul>
         <a href="#" class="header__register">Register</a>
     </header>
 
 
-    <form class="search" action="page/medecins.html">
+    <form class="search" action="page/medecins.html" onsubmit="rechercheDoctor()">
         <input type="text" id="search" class="search__input" placeholder="enter le nom de doctor .....">
-        <input type="submit" value="recherche" class="search__submit" onclick="rechercheDoctor()">
+        <input type="submit" value="recherche" class="search__submit" >
     </form>
     <main class="main">
 

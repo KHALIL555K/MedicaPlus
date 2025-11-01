@@ -1,6 +1,5 @@
 const medecinsCards = document.getElementById("medecins__card");
 const categorie = document.querySelectorAll("#categorie button");
-// console.log(medecinsCards);
 let search = localStorage.getItem('searchDoctor')
 
 const medecinsCard = [
@@ -90,19 +89,30 @@ const medecinsCard = [
     }
 ];
 
-// let search = localStorage.getItem('searchDoctor')
-
 const afficheSearch = () => {
     medecinsCards.innerHTML = '';
 
-    const results = medecinsData.filter((value) =>
+    if (!search) {
+        medecinsCards.innerHTML = '<p>Aucune recherche trouvée.</p>';
+        return;
+    }
+    
+    const results = medecinsCard.filter((value) =>
         value.name.toLowerCase().includes(search.toLowerCase())
     );
+
+    if (results.length === 0) {
+        medecinsCards.innerHTML = '<p>Aucun médecin trouvé.</p>';
+        return;
+    }
+
+    console.log(search)
+    console.log(results)
 
     results.map((value) => {
         medecinsCards.innerHTML += `
             <div class="medecins__card">
-                <img src="${value.image}" alt="" class="medecins__card-image">
+                <img src="${value.image}" alt="${value.name}" class="medecins__card-image">
                 <div class="medecins__card-content">
                     <h3 class="medecins__card-name">${value.name}</h3>
                     <p class="medecins__card-specialite">${value.specialite}</p>
@@ -113,7 +123,6 @@ const afficheSearch = () => {
         `;
     });
 };
-
 
 
 
@@ -146,3 +155,5 @@ const filterDoctor = (button) => {
 
 
 
+
+afficheSearch();
