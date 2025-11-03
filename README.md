@@ -54,8 +54,3 @@ Il a pour but d’apprendre à manipuler le **DOM**, le **BOM**, et le **localSt
 - **Jira** → gestion des tâches et suivi du sprint  
 
 ---
-
-## ⚙️ Installation et utilisation
-1. **Cloner le projet :**
-   ```bash
-   git clone https://github.com/ton-utilisateur/mediplus.git

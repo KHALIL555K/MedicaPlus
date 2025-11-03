@@ -18,6 +18,10 @@
     --gray: #767474;
 }
 
+body.Dark{
+    background-color: #121212;
+}
+
 
 /*=============== header ==============*/
 .header {
@@ -68,6 +72,23 @@
 
 a {
     color: black;
+}
+
+.header__btn{
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header__btn--img{
+    width: 3em;
+    height: 3em;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ================== main Section ======================= */

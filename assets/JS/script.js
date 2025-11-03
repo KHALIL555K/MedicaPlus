@@ -162,3 +162,11 @@ const rechercheDoctor = () => {
     let search = document.getElementById('search');
     localStorage.setItem('searchDoctor', search.value);
 }
+
+
+
+// darkmode 
+
+const toggleDarkMode = () =>{
+    document.body.classList.toggle("Dark")
+}
